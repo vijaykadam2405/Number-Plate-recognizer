@@ -1,0 +1,19 @@
+# Backend API Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+
+# Image Processing & ML Models
+ultralytics>=8.0.0      # For YOLO11s (Plate Detection) and YOLO11s-OBB (Row Detection)
+torch>=2.0.0            # PyTorch (Required by Ultralytics and PARSeq)
+torchvision>=0.15.0     # Required by PyTorch/Ultralytics
+Pillow>=9.0.0           # For image cropping and manipulation
+
+# OCR (PARSeq)
+# Note: To run the specific PARSeq models (Latin, Devanagari, Mixed), you may need 
+# the official strhub/parseq implementation depending on how your backend loads it.
+# If using the open-source strhub, you might need:
+# git+https://github.com/baudm/parseq.git
+pytorch-lightning>=2.0.0
+timm>=0.9.0
